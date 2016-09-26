@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dip"
+	android:background="@drawable/list_selector">
+    
+    <TextView android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:background="#18d7e5"
+        android:textSize="@dimen/font_smallest"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"/>
+    
+    <RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    <!-- Id -->
+	    <TextView android:id="@+id/txtId"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"/>
+	    
+	    <!-- Title-->
+	    <TextView android:id="@+id/txtTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#040404"
+	        android:textSize="@dimen/twenty"
+	        android:textStyle="bold"
+	        android:layout_marginRight="30dip"/>
+	    
+	    <!-- DateTime -->
+	    <TextView android:id="@+id/txtDateTime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#040404"
+	        android:textSize="@dimen/font_small"
+	        android:layout_below="@+id/txtTitle"/>
+	 
+	    <!-- Alamat -->
+	    <TextView android:id="@+id/txtAlamat"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="#040404"
+	        android:textSize="@dimen/font_small"
+	        android:layout_marginTop="1dip"
+	        android:visibility="gone" />
+	    
+	    <!-- Deskripsi -->
+	    <TextView android:id="@+id/txtDeskripsi"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="#040404"
+	        android:textSize="@dimen/font_small"
+	        android:layout_marginTop="1dip"
+	        android:visibility="gone" />
+	    
+	    <!-- Rightend Arrow -->
+	     <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/arrow"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"/>
+	     
+	     <!-- Latitude -->
+	    <TextView android:id="@+id/txtLatitude"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"/>
+	    
+	    <!-- Longitude -->
+	    <TextView android:id="@+id/txtLongitude"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"/>
+ 	</RelativeLayout>
+</LinearLayout>

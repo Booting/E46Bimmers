@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".MainActivity" >
+    
+    <ProgressBar android:id="@+id/progressBusy"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_centerInParent="true" />
+
+    <fragment android:id="@+id/maps"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    class="com.google.android.gms.maps.SupportMapFragment"
+	    android:visibility="gone" 
+    	android:animateLayoutChanges="true" />    
+    <fragment android:id="@+id/container"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    class="com.google.android.gms.maps.SupportMapFragment"
+    	android:animateLayoutChanges="true"
+    	android:visibility="gone" />
+    
+    <LinearLayout android:id="@+id/linSpinner"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+       	android:background="#CCFFFFFF"
+    	android:paddingLeft="10dip"
+    	android:paddingRight="10dip"
+    	android:paddingTop="4dip"
+    	android:paddingBottom="4dip">
+        <Spinner android:id="@+id/spinWilayah" 
+            android:layout_width="fill_parent"
+    		android:layout_height="40dp"
+	    	android:layout_weight="1" />
+        <Spinner android:id="@+id/spinPlace"
+            android:layout_width="fill_parent"
+    		android:layout_height="40dp"
+	    	android:layout_weight="1" />
+        <Button android:id="@+id/btnSearch"
+            android:layout_width="fill_parent"
+    		android:layout_height="30dp"
+	    	android:layout_weight="1"
+    		android:textColor="#fff"
+            android:background="#000000"
+            android:textSize="@dimen/font_small"
+            android:text="@string/search"
+            android:textAllCaps="true"
+            android:padding="5dip" />
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/linDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#CCFFFFFF"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:animateLayoutChanges="true" >
+        <TextView android:id="@+id/txtTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		    android:textSize="14sp"
+		    android:textStyle="bold"
+		    android:textAllCaps="true" />
+        <TextView android:id="@+id/txtDetail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		    android:textSize="13sp"
+		    android:layout_marginTop="2dip" />
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+		    android:layout_marginTop="5dip"
+		    android:layout_weight="2">
+		    <LinearLayout android:id="@+id/linRute"
+		        android:layout_width="match_parent"
+	            android:layout_height="35dp"
+	            android:orientation="horizontal"
+	            android:background="@drawable/custom_button_message"
+	            android:clickable="true"
+	            android:gravity="center"
+	            android:layout_weight="1">
+				<TextView android:id="@+id/txtRute"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#fff"
+			        android:textSize="13sp"
+			        android:text="Rute" />
+			</LinearLayout>
+            <LinearLayout android:id="@+id/linCall"
+		        android:layout_width="match_parent"
+	            android:layout_height="35dp"
+	            android:orientation="horizontal"
+	            android:background="@drawable/custom_button_call"
+	            android:clickable="true"
+	            android:gravity="center"
+	            android:layout_weight="1">
+				<TextView android:id="@+id/txtCall"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#fff"
+			        android:textSize="13sp"
+			        android:text="Call" />
+			</LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+</RelativeLayout>

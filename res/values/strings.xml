@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">E46Bimmers</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+	<!-- FACEBOOK ID LIVE -->
+	<string name="APP_ID">103431326675370</string>
+	<!-- FACEBOOK ID DEV -->
+	<!-- <string name="APP_ID">483920328440902</string> -->
+    
+    <string name="menu_one">Home</string>
+    <string name="menu_two">Info Perawatan</string>
+    <string name="menu_three">List Event</string>
+    <string name="menu_four">About</string>
+    <string name="menu_five">Exit</string>
+    
+    <string name="profile_member">Profile Member</string>
+    <string name="info_bengkel">BMW Parts &amp; Services</string>
+    <string name="find_friend_location">Find Friend Location</string>
+    <string name="info_perawatan">Maintenance Info</string>
+    <string name="buletin_board_event">Bulletin Board/Event</string>
+    <string name="jual_beli">Buy &amp; Sell Forum</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    
+    <string name="pictures">Pictures : </string>
+    <string name="username">Username : </string>
+    <string name="description">Description : </string>
+    <string name="phoneno">Phone No : </string>
+    <string name="platno">Plat No : </string>
+    <string name="typebody">Type Body : </string>
+    <string name="typemesin">Type Mesin : </string>
+    <string name="alamat">Alamat : </string>
+    <string name="showme">Show me in Find Friend Location</string>
+    
+    <string name="submit">SUBMIT</string>
+    <string name="search">SEARCH</string>
+	
+</resources>

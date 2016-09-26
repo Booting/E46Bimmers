@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:facebook="http://schemas.android.com/tools">
+
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:scaleType="centerCrop"/>
+
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <TextView android:id="@+id/txtText1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFF"
+            android:textSize="17sp"
+            android:text="Welcome To"
+            android:gravity="center"
+            android:visibility="gone"/>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="5dip"
+            android:visibility="gone">
+            <TextView android:id="@+id/txtText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DD003E"
+                android:textSize="22sp"
+                android:text="E46 BIMMERS"/>
+            <TextView android:id="@+id/txtText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:textSize="22sp"
+                android:text="COMMUNITY"
+                android:layout_marginLeft="6dip"/>
+        </LinearLayout>
+        <com.facebook.widget.LoginButton android:id="@+id/btnLoginn"
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            facebook:fetch_user_info="true"
+            facebook:confirm_logout="false"
+            android:visibility="gone"/>
+        <RelativeLayout android:id="@+id/btnLogin"
+	         android:layout_width="match_parent"
+             android:layout_height="45dp"
+             android:animateLayoutChanges="true"
+             android:layout_gravity="center_horizontal|center_vertical|center"
+             android:gravity="center_horizontal|center_vertical|center"
+             android:background="@drawable/custom_btn_signin_fb"
+	         android:layout_marginTop="20dp"
+	         android:layout_marginLeft="50dp"
+	         android:layout_marginRight="50dp"
+	         android:layout_marginBottom="20dp">
+             <ImageView android:id="@+id/imgFacebookLogo"
+                 android:layout_width="11dip"
+                 android:layout_height="18dip"
+                 android:background="@drawable/facebook_logo"
+                 android:layout_marginRight="10dip"
+                 android:layout_centerVertical="true"/>
+             <TextView android:id="@+id/lblSignWithFacebook"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Log in with Facebook"
+                 android:textColor="#FFF"
+                 android:textSize="15sp"
+                 android:textStyle="bold"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:layout_centerVertical="true"
+                 android:layout_toRightOf="@+id/imgFacebookLogo"/>
+         </RelativeLayout>
+        <ProgressBar android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

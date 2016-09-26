@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:gravity="center">
+    <LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:animateLayoutChanges="true"
+	    android:gravity="center"
+	    android:padding="30dip">
+	    <Button style="@style/btnStyleSeagull"
+		    android:text="@string/profile_member"
+		    android:id="@+id/btnProfileMember" />
+	    <Button style="@style/btnStyleSeagull"
+		    android:text="@string/info_bengkel"
+		    android:layout_marginTop="20dip"
+		    android:id="@+id/btnInfoBengkel" />
+	    <Button style="@style/btnStyleSeagull"
+		    android:text="@string/find_friend_location"
+		    android:layout_marginTop="20dip"
+		    android:id="@+id/btnFindFriendLocation" />
+	    <Button style="@style/btnStyleSeagull"
+		    android:text="@string/info_perawatan"
+		    android:layout_marginTop="20dip"
+		    android:id="@+id/btnInfoPerawatan" />
+	    <Button style="@style/btnStyleSeagull"
+		    android:text="@string/buletin_board_event"
+		    android:layout_marginTop="20dip"
+		    android:id="@+id/btnBuletinBoard" />
+	    <Button style="@style/btnStyleSeagull"
+		    android:text="@string/jual_beli"
+		    android:layout_marginTop="20dip"
+		    android:id="@+id/btnJualBeli" />
+	    <Button style="@style/btnStyleSeagull"
+		    android:text="@string/about"
+		    android:layout_marginTop="20dip"
+		    android:id="@+id/btnAbout" />
+	    <Button style="@style/btnStyleSeagull"
+		    android:text="@string/exit"
+		    android:layout_marginTop="20dip"
+		    android:id="@+id/btnExit" />
+    </LinearLayout>
+</ScrollView>

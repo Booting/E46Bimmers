@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lbspalangkaraya.activity.MainActivity" >
+
+    <item  android:id="@+id/menu_one"
+        android:orderInCategory="100"
+        android:title="@string/menu_one"
+        app:showAsAction="never"/>
+    
+    <item  android:id="@+id/menu_two"
+        android:orderInCategory="100"
+        android:title="@string/menu_two"
+        app:showAsAction="never"/>
+    
+    <item  android:id="@+id/menu_three"
+        android:orderInCategory="100"
+        android:title="@string/menu_three"
+        app:showAsAction="never"/>
+    
+    <item  android:id="@+id/menu_four"
+        android:orderInCategory="100"
+        android:title="@string/menu_four"
+        app:showAsAction="never"/>
+    
+    <item  android:id="@+id/menu_five"
+        android:orderInCategory="100"
+        android:title="@string/menu_five"
+        app:showAsAction="never"/>
+
+</menu>
